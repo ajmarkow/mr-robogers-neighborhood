@@ -22,7 +22,7 @@ By ***AJ Markow***
 
 ## Known Bugs
 
-*Debugging ongoing*
+*Number input is limited to numbers 1 through 100*
 
 ## Support and contact details
 
