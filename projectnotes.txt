@@ -3,7 +3,7 @@ Describe: const usernumber = $("form#usernumbers).val;
 Test:"It assigns a value to constant usernumber."
 Code:const usernumber = $("5").val;
 Expect:$("form#usernumbers).val.toequal(5);
-🡆 Test Passed
+Test Passed 9:26:50 AM - Friday, August 21, 2020
 -------------------------
 Describe:
 Test:
