@@ -1,5 +1,6 @@
 $(document).ready(function () {
   const residualarray = []
+
   $("form#usernumbers").submit(function (event) {
 
     event.preventDefault();
@@ -18,7 +19,6 @@ $(document).ready(function () {
     let beepstring = boopstring.replace(/1.|11|21|41|51|61|71|81|91/g, "Beep!")
     $("#mrrobogersoutput").replaceWith(beepstring);
   });
-
 });
 
 
