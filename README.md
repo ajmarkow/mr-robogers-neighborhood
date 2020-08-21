@@ -13,8 +13,10 @@ By ***AJ Markow***
 
 ## Setup/Installation Requirements
 
-*1. Load Index.html onto web server or computer on which you're viewing project.*
-*2 Load fonts, jQuery and bootstrap links from the internet.*
+*1. Load Index.html onto web server or computer on which you're viewing project.*  
+
+*2 Load fonts, jQuery and bootstrap links from the internet.*  
+
 *3. Launch site in your browser.*
 
 
