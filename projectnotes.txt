@@ -5,13 +5,16 @@ Code:const usernumber = $("5").val;
 Expect:$("form#usernumbers).val.toequal(5);
 Test Passed 9:26:50 AM - Friday, August 21, 2020
 -------------------------
-Describe:
-Test:
-Code:
-Expect:
+Describe: computeresponse(usernumber)
+Test: "It prints the range of numbers from user input to 0 on the page"
+Code:  while (usernumber > 0) {
+      residualarray.push(usernumber);
+      usernumber--;
+Expect: Numbers greater than 0 result in the remaining number being printed to the array
+Test pasted 12:44:34 PM
 -------------------------
-Describe:
-Test:
+Describe: remapvaluetotext(array element)
+Test: Numbers containing 1, 2, 3, 13, 21, and 32 respectively
 Code:
 Expect:
 -------------------------
