@@ -14,7 +14,13 @@ Expect: Numbers greater than 0 result in the remaining number being printed to t
 Test pasted 12:44:34 PM
 -------------------------
 Describe: remapvaluetotext(array element)
-Test: Numbers containing 1, 2, 3, 13, 21, and 32 respectively
-Code:
-Expect:
+Test: Numbers containing 1, 2, 3 respectively are replaced with mr rogers phrases 
+Code:stringcontainnumbers.replace("Beep, Boop, Would you be my neighbor)
+Expect:stringcontainsnumbers(3).toequal(would you be my neighbor?
+Test Passed 
 -------------------------
+Describe:Numbers go from 0-number entered
+Test: numbers displayed, 0,1, and so on
+Code:string.reverse();
+Expect:element order to be reversed, go 0-number entered.toequal(0,1, and so on...)
+Test Passed 

@@ -1,44 +1,25 @@
 $(document).ready(function () {
   const residualarray = []
-  $("#submission").one("submit, submitFormFunction")
   $("form#usernumbers").submit(function (event) {
 
     event.preventDefault();
     let usernumber = parseInt($("input#numberinput").val());
-    let robogersresponse = ["Beep!", "Boop!", "Won't you be my neighbor?", "Won't you be my neighbor?", "Boop", "Won't you be my neighbor?"]
-    let robogerskey = [1, 2, 3, 13, 21, 32]
 
     while (usernumber > 0) {
       residualarray.push(usernumber);
       usernumber--;
 
     }
-    residualarray.reverse();
-    let stringofresidual = residualarray.reverse().toString();
+    let residualarrayreverse = residualarray.reverse();
+    let joinedresidualarray = (residualarrayreverse.join()).toString();
 
-    // function convertString(number) {
-    //   if (number != 1) {
-    //     return number
-    //   } else if (number != 2) {
-    //     return number
-    //   } else if (number != 3) {
-    //     return number
-    //   } else if (number != 13) {
-    //     return "Won't you be my neighbor?"
-    //   } else if (number != 21) {
-    //     return number
-    //   } else if (number != 32) {
-    //     return number
-    //   }
-    // }
-    // const substitutedarray = residualarray.map(function (element) {
-    //   return convertString(element);
-    // });
-
-    const substitutedstring = stringofresidual.replace(/1/g, "Beep")
-    console.log(substitutedstring)
+    let wontyoustring = joinedresidualarray.replace(/3.|13|23|30|31|32|33|34|35|36|37|38|39|43|53|63|73|83|93/g, "Won't you be my neighbor?")
+    let boopstring = wontyoustring.replace(/2.|12|21|22|42|52|62|72|82|92|2/g, "Boop!")
+    let beepstring = boopstring.replace(/1.|11|21|41|51|61|71|81|91/g, "Beep!")
+    $("#mrrobogersoutput").replaceWith(beepstring);
   });
 
 });
+
 
 
