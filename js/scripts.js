@@ -15,8 +15,8 @@ $(document).ready(function () {
     let stringofresidual = residualarray.toString();
 
     function convertString(number) {
-      if (number = 1) {
-        return "Beep!"
+      if (number != 3) {
+        return number
       } else if (number = 2) {
         return "Boop!"
       } else if (number = 3) {
