@@ -3,25 +3,14 @@ $(document).ready(function () {
     event.preventDefault();
     const usernumber = parseInt($("input#numberinput").val());
     let robogersresponse = ["Beep!", "Boop!", "Won't you be my neighbor?"]
+    let residualarray = []
 
     function computeresponse(usernumber) {
-      let residualarray = []
-      let numberremainingtoprint = parseInt($("input#numberinput").val());
-      const printedresponse = robogersresponse.map(function (robogersresponse) {
-
-        for (numberremainingtoprint = usernumber); {
-          residualarray.unshift(usernumber)
-          numberremainingtoprint--;
-        };
-
-        for (numberremainingtoprint > 0 < usernumber) {
-          residualarray.push(numberremainingtoprint--);
-        }
-
-        for (numberremainingtoprint = 0); {
-          residualarray.push(0);
-        }
-      }
-    });
-});
+      residualarray.unshift(usernumber);
+      for (let index = residualarray[0]; index >= 0; index--); {
+        residualarray.push(index)
+      };
+    };
+    computeresponse(usernumber);
+  });
 });
