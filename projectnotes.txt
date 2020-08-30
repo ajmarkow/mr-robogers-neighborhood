@@ -24,3 +24,25 @@ Test: numbers displayed, 0,1, and so on
 Code:string.reverse();
 Expect:element order to be reversed, go 0-number entered.toequal(0,1, and so on...)
 Test Passed 
+
+
+function checkForMatch(element) {
+  for (let i = 0; i <= usernumber; i++) {
+    if (element.includes(3)) {
+      residualarray.push("Won't you be my neighbor?");
+    } else if (element.includes(2)) {
+      residualarray.push("Boop!");
+    } else if (element.includes(1)) {
+      residualarray.push("Beep");
+    } else {
+      residualarray.push(element);
+    }
+  }
+  console.log(residualarray);
+  return residualarray;
+}
+
+ residualarray.map(function (element) {
+      console.log(residualarray);
+      return checkForMatch(element);
+    }
